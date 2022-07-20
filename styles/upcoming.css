@@ -1,3 +1,6 @@
+/* --------------------
+        Match CSS styles 
+----------------------*/
 .match {
   border: 1px solid #e8e8e8;
   border-radius: 10px;
@@ -28,4 +31,24 @@
   text-align: center;
   font-size: 16px;
   font-weight: 400;
+}
+
+/* --------------------
+        Media Queries 
+----------------------*/
+/* ---------
+        Mobile Device 
+-------==*/
+@media screen and (max-width: 688px) {
+  #active-btn {
+    padding: 9px 15px;
+  }
+  .blogs-left a {
+    padding: 9px 33px;
+    border: 1px solid #e8e8e8;
+  }
+
+  .blogs-left a:nth-child(3) {
+    padding: 9px 60px;
+  }
 }

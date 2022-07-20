@@ -75,7 +75,6 @@ main {
   grid-column-gap: 24px;
 }
 .blogs-left {
-  /* height: 90%; */
   padding: 30px;
   background-color: #161616;
   display: grid;
@@ -227,7 +226,9 @@ footer .social-link {
     height: 100%;
     margin: 0 auto;
   }
-  /* Blog CSS */
+  /* --------------
+      Blog CSS 
+  ---------------*/
   #active-btn {
     padding: 9px 60px;
   }
@@ -253,7 +254,9 @@ footer .social-link {
   .blogs-right {
     grid-template-columns: 1fr;
   }
-  /* Footer CSS */
+  /* --------------
+      Footer CSS 
+  ---------------*/
   footer {
     padding: 24px 0;
   }
@@ -287,11 +290,16 @@ footer .social-link {
     font-size: 20px;
   }
 }
-/* Tab Device */
+/* --------------
+      Tab Device 
+  ---------------*/
 @media screen and (min-width: 689px) and (max-width: 992px) {
   main {
     padding-bottom: 70px;
   }
+  /* --------------
+      Banner CSS 
+  ---------------*/
   #banner {
     grid-template-columns: 1fr 1fr;
   }
@@ -314,7 +322,9 @@ footer .social-link {
   #banner .banner-image {
     height: 340px;
   }
-  /* Blog CSS */
+  /* --------------
+      Blog CSS 
+  ---------------*/
   #active-btn {
     padding: 9px 60px;
   }
@@ -354,7 +364,9 @@ footer .social-link {
     font-size: 20px;
     border-radius: 5px;
   }
-  /* Footer CSS */
+  /* --------------
+      Footer CSS 
+  ---------------*/
   footer {
     padding: 70px 0 55px 0;
   }
