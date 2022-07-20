@@ -16,7 +16,10 @@
 main {
   padding: 40px 0px 130px 0px;
 }
-
+#active-btn {
+  color: #fff;
+  background-color: #dd0000;
+}
 /* -----------------------
         Banner CSS styles
 ------------------------- */
@@ -61,6 +64,84 @@ main {
 #banner .banner-image img {
   width: 100%;
   height: 100%;
+}
+/* -----------------------
+        Blog CSS styles
+------------------------- */
+#Blogs {
+  padding-top: 130px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-column-gap: 24px;
+}
+.blogs-left {
+  /* height: 90%; */
+  padding: 30px;
+  background-color: #161616;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 30px;
+  border-radius: 10px;
+}
+.blogs-left a {
+  color: #161616;
+  padding: 17px 0;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  line-height: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blogs-right {
+  grid-area: 1 / 2 / span 2 / span 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+}
+.blog-item {
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+}
+.blog-item .blog-detail {
+  padding: 20px;
+}
+.blog-item .blog-detail a {
+  display: inline-block;
+  color: #161616;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 4px 16px;
+  margin-bottom: 15px;
+  border: 1px solid #161616;
+  border-radius: 5px;
+}
+.blog-item .blog-detail h4 {
+  color: #161616;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  margin-bottom: 20px;
+}
+.blog-item .blog-detail .blog-info span {
+  color: rgba(22, 22, 22, 0.7);
+  margin-right: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.blog-item .blog-detail .blog-info span i.fa {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  color: 1px solid rgba(22, 22, 22, 0.8);
 }
 /* -----------------------
         Footer CSS styles
@@ -136,6 +217,31 @@ footer .social-link {
     width: 100%;
     height: 100%;
     margin: 0 auto;
+  }
+  /* Blog CSS */
+  #active-btn {
+    padding: 9px 60px;
+  }
+  #Blogs {
+    display: block;
+  }
+  .blogs-left {
+    /* height: 90%; */
+    padding: 24px 30px;
+    background-color: #fff;
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+  }
+  .blogs-left a {
+    padding: 9px 18px;
+    border: 1px solid #e8e8e8;
+  }
+  .blogs-left a:nth-child(2) {
+    padding: 9px 33px;
+  }
+  .blogs-right {
+    grid-template-columns: 1fr;
   }
   /* Footer CSS */
   footer {
