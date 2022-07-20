@@ -29,8 +29,6 @@ main {
   align-items: center;
   border-radius: 30px;
 }
-#banner .banner-details {
-}
 #banner .banner-details .banner-title {
   color: #fff;
   font-size: 70px;
@@ -61,5 +59,156 @@ main {
   height: 613px;
 }
 #banner .banner-image img {
+  width: 100%;
   height: 100%;
+}
+/* -----------------------
+        Footer CSS styles
+------------------------- */
+footer {
+  background-color: #161616;
+  padding: 130px 0;
+}
+footer .footer-title {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+  padding-bottom: 50px;
+  line-height: 60px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+footer nav {
+  margin-top: 50px;
+  padding: 0 110px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+footer nav a {
+  color: #b9b9b9;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+footer .social-link {
+  display: none;
+}
+/* --------------------
+        Media Queries 
+----------------------*/
+/* Mobile Device */
+@media screen and (max-width: 688px) {
+  #banner {
+    display: block;
+    padding: 28px 38px 0 38px;
+    border-radius: 10px;
+  }
+  #banner .banner-details {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 21px;
+  }
+  #banner .banner-details .banner-title {
+    font-size: 22px;
+    line-height: 33px;
+  }
+  #banner .banner-details p {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  #banner .banner-details a {
+    padding: 8px 15px;
+  }
+  #banner .banner-image {
+    /* width: 233px; */
+    height: 245px;
+    margin: 0 auto;
+  }
+  #banner .banner-image img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  /* Footer CSS */
+  footer {
+    padding: 24px 0;
+  }
+  footer .footer-title {
+    font-size: 22px;
+    margin-bottom: 50px;
+    line-height: 33px;
+    padding-bottom: 24px;
+  }
+  footer nav {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  footer nav a {
+    font-size: 14px;
+    line-height: 50px;
+  }
+  footer .social-link {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: block;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  footer .social-link a {
+    color: #fff;
+  }
+  footer .social-link a i {
+    font-size: 20px;
+  }
+}
+/* Tab Device */
+@media screen and (min-width: 689px) and (max-width: 992px) {
+  #banner {
+    grid-template-columns: 1fr 1fr;
+  }
+  #banner .banner-details .banner-title {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  #banner .banner-details p {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  #banner .banner-details a {
+    padding: 9px 18px;
+  }
+  #banner .banner-image {
+    height: 340px;
+  }
+  /* Footer CSS */
+  footer nav {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  footer nav a {
+    line-height: 50px;
+  }
+  footer nav .active-tab-1 {
+    grid-area: 2 / 1 / span 1 / span 2;
+    text-align: right;
+  }
+  footer nav .active-tab-2 {
+    grid-area: 2 / 2 / span 3 / span 4;
+  }
 }
