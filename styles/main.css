@@ -108,6 +108,9 @@ main {
   border: 1px solid #e8e8e8;
   border-radius: 10px;
 }
+.blog-item .blog-thumbnail img {
+  width: 100%;
+}
 .blog-item .blog-detail {
   padding: 20px;
 }
@@ -142,6 +145,9 @@ main {
   height: 18px;
   margin-right: 10px;
   color: 1px solid rgba(22, 22, 22, 0.8);
+}
+#Blogs .blog-tab-view {
+  display: none;
 }
 /* -----------------------
         Footer CSS styles
@@ -181,6 +187,9 @@ footer .social-link {
 ----------------------*/
 /* Mobile Device */
 @media screen and (max-width: 688px) {
+  main {
+    padding-bottom: 40px;
+  }
   #banner {
     display: block;
     padding: 28px 38px 0 38px;
@@ -224,6 +233,7 @@ footer .social-link {
   }
   #Blogs {
     display: block;
+    padding: 0;
   }
   .blogs-left {
     /* height: 90%; */
@@ -249,11 +259,11 @@ footer .social-link {
   }
   footer .footer-title {
     font-size: 22px;
-    margin-bottom: 50px;
     line-height: 33px;
     padding-bottom: 24px;
   }
   footer nav {
+    margin-top: 15px;
     padding: 0;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -279,6 +289,9 @@ footer .social-link {
 }
 /* Tab Device */
 @media screen and (min-width: 689px) and (max-width: 992px) {
+  main {
+    padding-bottom: 70px;
+  }
   #banner {
     grid-template-columns: 1fr 1fr;
   }
@@ -301,9 +314,56 @@ footer .social-link {
   #banner .banner-image {
     height: 340px;
   }
+  /* Blog CSS */
+  #active-btn {
+    padding: 9px 60px;
+  }
+  #Blogs {
+    display: block;
+    padding: 0;
+    margin-top: 70px;
+  }
+  .blogs-left {
+    padding-bottom: 30px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 22px;
+  }
+  .blogs-left a {
+    padding: 9px 18px;
+    border: 1px solid #e8e8e8;
+  }
+  .blogs-left a:nth-child(2) {
+    padding: 9px 33px;
+  }
+  .blogs-right {
+    grid-template-columns: 1fr 1fr;
+  }
+  #Blogs .blog-tab-view {
+    display: block;
+    margin-top: 50px;
+    text-align: center;
+  }
+  #Blogs .blog-tab-view a {
+    display: inline-block;
+    color: #fff;
+    background-color: #dd0000;
+    text-decoration: none;
+    padding: 12px 29px;
+    font-size: 20px;
+    border-radius: 5px;
+  }
   /* Footer CSS */
+  footer {
+    padding: 70px 0 55px 0;
+  }
+  footer .footer-title {
+    padding-bottom: 30px;
+  }
   footer nav {
     padding: 0;
+    margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
