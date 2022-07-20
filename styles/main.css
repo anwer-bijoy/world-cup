@@ -1,0 +1,65 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* -------------------
+        Common CSS
+--------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+main {
+  padding: 40px 0px 130px 0px;
+}
+
+/* -----------------------
+        Banner CSS styles
+------------------------- */
+#banner {
+  background-color: #161616;
+  padding: 33px 80px 0 105px;
+  display: grid;
+  column-gap: 24px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  border-radius: 30px;
+}
+#banner .banner-details {
+}
+#banner .banner-details .banner-title {
+  color: #fff;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 80px;
+}
+#banner .banner-details p {
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+#banner .banner-details a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #dd0000;
+  color: #fff;
+  padding: 16px 16px 16px 25px;
+  border-radius: 5px;
+}
+#banner .banner-details i {
+  font-size: 24px;
+  margin-left: 10px;
+}
+#banner .banner-image {
+  height: 613px;
+}
+#banner .banner-image img {
+  height: 100%;
+}
