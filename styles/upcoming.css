@@ -13,6 +13,10 @@
   justify-content: center;
   align-items: center;
 }
+.match .match-flag img {
+  width: 94px;
+  height: 57px;
+}
 .match-flag span {
   font-size: 16px;
   font-weight: 700;
@@ -31,7 +35,6 @@
   font-size: 16px;
   font-weight: 400;
 }
-
 /* --------------------
         Media Queries 
 ----------------------*/
