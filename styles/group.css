@@ -1,0 +1,41 @@
+.group {
+  padding: 30px;
+  border: 1px solid #e8e8e8;
+}
+.group-title {
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #dd0000;
+}
+.group-details {
+  margin-top: 20px;
+}
+.group-details .country {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+.group-details .country img {
+  width: 94px;
+  height: 57px;
+}
+/* --------------------
+        Media Queries 
+----------------------*/
+/* ---------
+        Mobile Device 
+-------==*/
+@media screen and (max-width: 688px) {
+  #active-btn {
+    padding: 9px 33px;
+  }
+  .blogs-left a {
+    padding: 9px 33px;
+    border: 1px solid #e8e8e8;
+  }
+
+  .blogs-left a:nth-child(3) {
+    padding: 9px 60px;
+  }
+}
