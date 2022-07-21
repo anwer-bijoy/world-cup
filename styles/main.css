@@ -18,13 +18,18 @@ main {
 }
 #active-btn {
   color: #fff;
-  background-color: #dd0000;
+  background-color: #eb2f06;
+}
+@keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
 }
 /* -----------------------
         Banner CSS styles
 ------------------------- */
 #banner {
-  background-color: #161616;
+  background-color: #341f97;
   padding: 33px 80px 0 105px;
   display: grid;
   column-gap: 24px;
@@ -49,10 +54,20 @@ main {
 #banner .banner-details a {
   display: inline-block;
   text-decoration: none;
-  background-color: #dd0000;
+  background-color: #eb2f06;
   color: #fff;
   padding: 16px 16px 16px 25px;
   border-radius: 5px;
+}
+#banner .animation-btn:hover {
+  background-image: linear-gradient(
+    90deg,
+    #f1c40f 0%,
+    #f39c12 49%,
+    #e67e22 80%,
+    #d35400 100%
+  );
+  animation: slidebg 5s linear infinite;
 }
 #banner .banner-details i {
   font-size: 24px;
@@ -76,7 +91,7 @@ main {
 }
 .blogs-left {
   padding: 30px;
-  background-color: #161616;
+  background-color: #341f97;
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 30px;
@@ -152,7 +167,7 @@ main {
         Footer CSS styles
 ------------------------- */
 footer {
-  background-color: #161616;
+  background-color: #341f97;
   padding: 130px 0;
 }
 footer .footer-title {
@@ -358,7 +373,7 @@ footer .social-link {
   #Blogs .blog-tab-view a {
     display: inline-block;
     color: #fff;
-    background-color: #dd0000;
+    background-color: #eb2f06;
     text-decoration: none;
     padding: 12px 29px;
     font-size: 20px;
